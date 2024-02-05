@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        h1 {
+            border: 3px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+            color: brown;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            background-color: gray;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+        content: " [link]";
+        font-weight: normal;
+        color: rgb(165, 165, 165);
+        }
+
+        .top::after {
+            content: " => esse é o melhor";
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=o8PTLzCOAtc" target="_blank" class="top">Filipe Ret</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank">Curso de HTML e CSS</a></li>
+        <li><a href="https://www.youtube.com/watch?v=x-hjmROGJ8c" target="_blank">Henrique e Juliano</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body {
+            font: normal 1em Arial, sans-serif;
+        }
+
+        div {
+            display: inline-block;
+            border: 1.5px solid black;
+            border-radius: 5px;
+            background-color: gray;
+            color: white;
+            width: 190px;
+            height: 35px;
+            text-align: center;
+        }
+
+        div>p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            border: 1.5px solid black;
+            border-radius: 5px;
+            background-color: gray;
+            color: white;
+            width: 190px;
+            height: 17px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estamos programando com pseudo-classe Hover</h1>
+    <div> 
+        Venda
+        <p> Nova venda</p>
+    </div>
+    <div>
+        Produto
+        <p>Cadastrar produto</p>
+    </div>
+    <div>
+        Nota fiscal
+        <p>Tirar nota fiscal</p>
+    </div>
+    <div>
+        Segurança
+        <p>NOVO USUÁRIO</p>
+    </div>
+    <p>fim</p>
+</body>
+</html>

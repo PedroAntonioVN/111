@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+:root {
+    --cor1: #680000;
+    --cor2: #db0909;
+    --cor3: #e7d8c5;
+    --fundo: rgba(14, 14, 14, 0.664);
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+}
+
+
+div#principal {
+    background-color: transparent;
+    min-height: 413px;
+    max-width: 1000px;
+    margin: 200px 0px 0px 0px;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+div#foto {
+    background-color: transparent;
+    border-right: solid var(--cor1);
+}
+div#menu {
+    background-color: transparent;
+}
+
+
+h1#esquerdo {
+    font-size: 2em;
+    max-width: 347px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.555);
+    text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.281);
+    margin: 0px 0px 15px 0px;
+    padding: 0px 13px;
+    font-family: 'Merriweather', serif;
+}
+h1#direito {
+    font: normal 8em 'Dancing Script', cursive;
+    text-align: center;
+    color: #8b0000;
+    text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.356);
+    margin: 48px 0px 85px 0px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    width: 382px;
+    margin: 16px 18px 16px 10px;
+}
+a {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: var(--cor1);
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+a:hover {
+    background-color: var(--cor2);
+    color: white;
+    transition-duration: .5s;
+}
+
+
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+picture img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    border-radius: 75px;
+}
+
+
+footer {
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.384);
+}
